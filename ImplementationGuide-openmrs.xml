@@ -11,7 +11,7 @@
   <name value="OMRSFhir2ImplementationGuide"/>
   <title value="OpenMRS FHIR2 Implementation Guide"/>
   <status value="draft"/>
-  <date value="2022-06-14T21:30:34+00:00"/>
+  <date value="2022-08-19T07:11:06+00:00"/>
   <contact>
     <name value="OpenMRS, Inc."/>
     <telecom>
@@ -215,6 +215,28 @@
     </extension>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:complex-type"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/omrs-address"/>
+      </reference>
+      <name value="OMRS Address"/>
+      <description value="Address profile specifies the geological location details"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/omrs-encounter"/>
+      </reference>
+      <name value="Openmrs Encounter"/>
+      <description value="A FHIR Encounter as understood by OpenMRS"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
@@ -259,6 +281,72 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/omrs-person"/>
+      </reference>
+      <name value="OpenMRS Person"/>
+      <description value="A FHIR Person as understood by OpenMRS"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/omrs-practitioner"/>
+      </reference>
+      <name value="Openmrs Practitioner"/>
+      <description value="A FHIR Practitioner as understood by OpenMRS"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/OpenMRS-diagnostic-report"/>
+      </reference>
+      <name value="OpenMRS Diagnostic Report"/>
+      <description value="DiagnosticReport resource created by a OpenMRS that representing results of diagnostic tests that are performed in a given clinical context."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/OpenMRS-observation"/>
+      </reference>
+      <name value="OpenMRS Observation"/>
+      <description value="Observation resource created by a OpenMRS that representing a result for an order submitted by an EMR System"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/OpenMRS-service-request"/>
+      </reference>
+      <name value="OpenMRS Service Request"/>
+      <description value=" Service Request Resource is represents a request for some type of procedure or diagnostic test to be performed. When fulfilled, the results of this request are represented as a DiagnosticReport resource with associated Observation resources"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/OpenMRS-task"/>
+      </reference>
+      <name value="OpenMRS Task"/>
+      <description value="A Task resource represent an activity that is to be performed,and track the completion of said activity between an OpenMRS and a FHIR2"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:extension"/>
       </extension>
       <reference>
@@ -267,6 +355,160 @@
       <name value="OpenMRS Patient Identifier Location"/>
       <description value="OpenMRS location for which this identifier is valid"/>
       <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/encounter-status-vs"/>
+      </reference>
+      <name value="EncounterStatus"/>
+      <description value="Encounter  status ValueSet"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/location-status-vs"/>
+      </reference>
+      <name value="Location Status ValueSet"/>
+      <description value="Indicates whether the location is still in use."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/OpenMRS-task-intent-vs"/>
+      </reference>
+      <name value="OpenMRS Intent for Task"/>
+      <description value="The intent of the task, subset from https://www.hl7.org/FHIR/valueset-task-intent.html"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/OpenMRS-task-status-vs"/>
+      </reference>
+      <name value="OpenMRS Status for Task"/>
+      <description value="The state of the task, subset from https://www.hl7.org/FHIR/valueset-task-status.html"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/OpenMRS-diagnostic-report-status-vs"/>
+      </reference>
+      <name value="OpenMRS Diagnostic Report Status Flag"/>
+      <description value="The status of the diagnostic report, subset from https://www.hl7.org/fhir/valueset-diagnostic-report-status.html"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/OpenMRS-order-code-vs"/>
+      </reference>
+      <name value="OpenMRS Order Code"/>
+      <description value="The code for the openmrs requested in the EMR."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/encounter-type"/>
+      </reference>
+      <name value="Encounter Type Code System"/>
+      <description value="Encounter Type Coding System"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Patient"/>
+      </extension>
+      <reference>
+        <reference value="Patient/51ead2ec-279f-482d-80f8-209a5d4109d0"/>
+      </reference>
+      <name value="Encounter Patient Example"/>
+      <description value="OMRS Encounter Resource Example"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Encounter"/>
+      </extension>
+      <reference>
+        <reference value="Encounter/5b829d01-34bb-47d1-b1bb-9303c3a9ebcb"/>
+      </reference>
+      <name value="Encounter Resource Example"/>
+      <description value="Example OMRS Encounter"/>
+      <exampleCanonical value="http://fhir.openmrs.org/fhir/StructureDefinition/omrs-encounter"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Practitioner"/>
+      </extension>
+      <reference>
+        <reference value="Practitioner/7a9e2727-11ee-47ae-8af5-1dcf5337f7c2"/>
+      </reference>
+      <name value="Practitioner Example"/>
+      <description value="Practitioner Resource Example"/>
+      <exampleCanonical value="http://fhir.openmrs.org/fhir/StructureDefinition/omrs-practitioner"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Location"/>
+      </extension>
+      <reference>
+        <reference value="Location/LocationExample"/>
+      </reference>
+      <name value="Location Example"/>
+      <description value="Example OMRS location"/>
+      <exampleCanonical value="http://fhir.openmrs.org/fhir/StructureDefinition/omrs-location"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/example-openmrs-Observation"/>
+      </reference>
+      <name value="Openmrs Observation"/>
+      <description value="Example OMRS Observation Resource"/>
+      <exampleCanonical value="http://fhir.openmrs.org/fhir/StructureDefinition/OpenMRS-observation"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Patient"/>
+      </extension>
+      <reference>
+        <reference value="Patient/example-openmrs-Patient"/>
+      </reference>
+      <name value="Openmrs Patient"/>
+      <description value="Example OMRS Patient Resource"/>
+      <exampleCanonical value="http://fhir.openmrs.org/fhir/StructureDefinition/omrs-patient"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Task"/>
+      </extension>
+      <reference>
+        <reference value="Task/example-openmrs-Task"/>
+      </reference>
+      <name value="Openmrs Task"/>
+      <description value="Example OMRS Task Resource"/>
+      <exampleCanonical value="http://fhir.openmrs.org/fhir/StructureDefinition/OpenMRS-task"/>
     </resource>
     <page>
       <nameUrl value="toc.html"/>
