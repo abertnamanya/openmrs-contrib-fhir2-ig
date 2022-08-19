@@ -12,6 +12,36 @@
     }
   ],
   "profiles": {
+    "DiagnosticReport": [
+      {
+        "url": "http://fhir.openmrs.org/fhir/StructureDefinition/OpenMRS-diagnostic-report",
+        "title": "OpenMRS Diagnostic Report"
+      }
+    ],
+    "Observation": [
+      {
+        "url": "http://fhir.openmrs.org/fhir/StructureDefinition/OpenMRS-observation",
+        "title": "OpenMRS Observation"
+      }
+    ],
+    "ServiceRequest": [
+      {
+        "url": "http://fhir.openmrs.org/fhir/StructureDefinition/OpenMRS-service-request",
+        "title": "OpenMRS Service Request"
+      }
+    ],
+    "Task": [
+      {
+        "url": "http://fhir.openmrs.org/fhir/StructureDefinition/OpenMRS-task",
+        "title": "OpenMRS Task"
+      }
+    ],
+    "Encounter": [
+      {
+        "url": "http://fhir.openmrs.org/fhir/StructureDefinition/omrs-encounter",
+        "title": "Openmrs Encounter"
+      }
+    ],
     "Location": [
       {
         "url": "http://fhir.openmrs.org/fhir/StructureDefinition/omrs-location",
@@ -23,9 +53,27 @@
         "url": "http://fhir.openmrs.org/fhir/StructureDefinition/omrs-patient",
         "title": "OpenMRS Patient"
       }
+    ],
+    "Person": [
+      {
+        "url": "http://fhir.openmrs.org/fhir/StructureDefinition/omrs-person",
+        "title": "OpenMRS Person"
+      }
+    ],
+    "Practitioner": [
+      {
+        "url": "http://fhir.openmrs.org/fhir/StructureDefinition/omrs-practitioner",
+        "title": "Openmrs Practitioner"
+      }
     ]
   },
   "usage": {
+    "http://fhir.openmrs.org/StructureDefinition/patient-identifier-location": [
+      "Patient.identifier"
+    ],
+    "http://fhir.openmrs.org/ext/address": [
+      "Patient.address"
+    ],
     "http://fhir.openmrs.org/fhir/StructureDefinition/omrs-patient-identifier-location": [
       "Identifier"
     ],
@@ -44,8 +92,14 @@
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet": [
       "StructureDefinition.snapshot.element.binding"
     ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable": [
+      "StructureDefinition.snapshot.element"
+    ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-category": [
       "StructureDefinition"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-display-hint": [
+      "StructureDefinition.snapshot.element"
     ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name": [
       "StructureDefinition.snapshot.element"
@@ -54,10 +108,14 @@
       "StructureDefinition.snapshot.element.type"
     ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-hierarchy": [
+      "StructureDefinition.differential.element.type",
       "StructureDefinition.snapshot.element.type"
     ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category": [
       "StructureDefinition"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status": [
+      "StructureDefinition.snapshot.element"
     ],
     "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter": [
       "ImplementationGuide.definition"

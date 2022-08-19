@@ -178,6 +178,15 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <li>
          <a href="#3">Structures: Extension Definitions</a>
       </li>
+      <li>
+         <a href="#4">Terminology: Value Sets</a>
+      </li>
+      <li>
+         <a href="#5">Terminology: Code Systems</a>
+      </li>
+      <li>
+         <a href="#6">Example: Example Instances</a>
+      </li>
    </ul>
 </div>
 <div xmlns:html="http://www.w3.org/1999/xhtml"
@@ -193,6 +202,15 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <table class="grid">
          <col style="width:20%"/>
          <tbody>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-omrs-encounter.html"
+                     title="StructureDefinition/omrs-encounter">Openmrs Encounter</a>
+               </td>
+               <td>
+<p>A FHIR Encounter as understood by OpenMRS</p>
+</td>
+            </tr>
             <tr>
                <td style="column-width:30%">
                   <a href="StructureDefinition-omrs-location.html"
@@ -211,6 +229,60 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <p>A FHIR Patient as understood by OpenMRS</p>
 </td>
             </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-omrs-person.html"
+                     title="StructureDefinition/omrs-person">OpenMRS Person</a>
+               </td>
+               <td>
+<p>A FHIR Person as understood by OpenMRS</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-omrs-practitioner.html"
+                     title="StructureDefinition/omrs-practitioner">Openmrs Practitioner</a>
+               </td>
+               <td>
+<p>A FHIR Practitioner as understood by OpenMRS</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-OpenMRS-diagnostic-report.html"
+                     title="StructureDefinition/OpenMRS-diagnostic-report">OpenMRS Diagnostic Report</a>
+               </td>
+               <td>
+<p>DiagnosticReport resource created by a OpenMRS that representing results of diagnostic tests that are performed in a given clinical context.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-OpenMRS-observation.html"
+                     title="StructureDefinition/OpenMRS-observation">OpenMRS Observation</a>
+               </td>
+               <td>
+<p>Observation resource created by a OpenMRS that representing a result for an order submitted by an EMR System</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-OpenMRS-service-request.html"
+                     title="StructureDefinition/OpenMRS-service-request">OpenMRS Service Request</a>
+               </td>
+               <td>
+<p>Service Request Resource is represents a request for some type of procedure or diagnostic test to be performed. When fulfilled, the results of this request are represented as a DiagnosticReport resource with associated Observation resources</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-OpenMRS-task.html"
+                     title="StructureDefinition/OpenMRS-task">OpenMRS Task</a>
+               </td>
+               <td>
+<p>A Task resource represent an activity that is to be performed,and track the completion of said activity between an OpenMRS and a FHIR2</p>
+</td>
+            </tr>
          </tbody>
       </table>
    </p>
@@ -223,6 +295,15 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <table class="grid">
          <col style="width:20%"/>
          <tbody>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-omrs-address.html"
+                     title="StructureDefinition/omrs-address">OMRS Address</a>
+               </td>
+               <td>
+<p>Address profile specifies the geological location details</p>
+</td>
+            </tr>
             <tr>
                <td style="column-width:30%">
                   <a href="StructureDefinition-omrs-location-contact-point.html"
@@ -265,6 +346,165 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tbody>
       </table>
    </p>
+   <a name="4"> </a>
+   <h3>Terminology: Value Sets </h3>
+   <p>
+    <p>These define sets of codes used by systems conforming to this implementation guide</p>
+</p>
+   <p>
+      <table class="grid">
+         <col style="width:20%"/>
+         <tbody>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-encounter-status-vs.html"
+                     title="ValueSet/encounter-status-vs">EncounterStatus</a>
+               </td>
+               <td>
+<p>Encounter  status ValueSet</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-location-status-vs.html"
+                     title="ValueSet/location-status-vs">Location Status ValueSet</a>
+               </td>
+               <td>
+<p>Indicates whether the location is still in use.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-OpenMRS-task-intent-vs.html"
+                     title="ValueSet/OpenMRS-task-intent-vs">OpenMRS Intent for Task</a>
+               </td>
+               <td>
+<p>The intent of the task, subset from https://www.hl7.org/FHIR/valueset-task-intent.html</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-OpenMRS-task-status-vs.html"
+                     title="ValueSet/OpenMRS-task-status-vs">OpenMRS Status for Task</a>
+               </td>
+               <td>
+<p>The state of the task, subset from https://www.hl7.org/FHIR/valueset-task-status.html</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-OpenMRS-diagnostic-report-status-vs.html"
+                     title="ValueSet/OpenMRS-diagnostic-report-status-vs">OpenMRS Diagnostic Report Status Flag</a>
+               </td>
+               <td>
+<p>The status of the diagnostic report, subset from https://www.hl7.org/fhir/valueset-diagnostic-report-status.html</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-OpenMRS-order-code-vs.html"
+                     title="ValueSet/OpenMRS-order-code-vs">OpenMRS Order Code</a>
+               </td>
+               <td>
+<p>The code for the openmrs requested in the EMR.</p>
+</td>
+            </tr>
+         </tbody>
+      </table>
+   </p>
+   <a name="5"> </a>
+   <h3>Terminology: Code Systems </h3>
+   <p>
+    <p>These define new code systems used by systems conforming to this implementation guide</p>
+</p>
+   <p>
+      <table class="grid">
+         <col style="width:20%"/>
+         <tbody>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="CodeSystem-encounter-type.html" title="CodeSystem/encounter-type">Encounter Type Code System</a>
+               </td>
+               <td>
+<p>Encounter Type Coding System</p>
+</td>
+            </tr>
+         </tbody>
+      </table>
+   </p>
+   <a name="6"> </a>
+   <h3>Example: Example Instances </h3>
+   <p>
+    <p>These are example instances that show what data produced and consumed by systems conforming with this implementation guide might look like</p>
+</p>
+   <p>
+      <table class="grid">
+         <col style="width:20%"/>
+         <tbody>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Patient-51ead2ec-279f-482d-80f8-209a5d4109d0.html"
+                     title="Patient/51ead2ec-279f-482d-80f8-209a5d4109d0">Encounter Patient Example</a>
+               </td>
+               <td>
+<p>OMRS Encounter Resource Example</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Encounter-5b829d01-34bb-47d1-b1bb-9303c3a9ebcb.html"
+                     title="Encounter/5b829d01-34bb-47d1-b1bb-9303c3a9ebcb">Encounter Resource Example</a>
+               </td>
+               <td>
+<p>Example OMRS Encounter</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Practitioner-7a9e2727-11ee-47ae-8af5-1dcf5337f7c2.html"
+                     title="Practitioner/7a9e2727-11ee-47ae-8af5-1dcf5337f7c2">Practitioner Example</a>
+               </td>
+               <td>
+<p>Practitioner Resource Example</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Location-LocationExample.html" title="Location/LocationExample">Location Example</a>
+               </td>
+               <td>
+<p>Example OMRS location</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Observation-example-openmrs-Observation.html"
+                     title="Observation/example-openmrs-Observation">Openmrs Observation</a>
+               </td>
+               <td>
+<p>Example OMRS Observation Resource</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Patient-example-openmrs-Patient.html"
+                     title="Patient/example-openmrs-Patient">Openmrs Patient</a>
+               </td>
+               <td>
+<p>Example OMRS Patient Resource</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Task-example-openmrs-Task.html" title="Task/example-openmrs-Task">Openmrs Task</a>
+               </td>
+               <td>
+<p>Example OMRS Task Resource</p>
+</td>
+            </tr>
+         </tbody>
+      </table>
+   </p>
 </div>
 
 </div>
@@ -290,7 +530,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
            
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2021+ <a style="color: #81BEF7" href="https://openmrs.org"></a>.  Package openmrs#0.1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Jun 14, 2022 21:30+0000">2022-06-14</span>
+          IG &#169; 2021+ <a style="color: #81BEF7" href="https://openmrs.org"></a>.  Package openmrs#0.1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Aug 19, 2022 07:11+0000">2022-08-19</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |
