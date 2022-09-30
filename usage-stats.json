@@ -48,6 +48,12 @@
         "title": "OpenMRS Location"
       }
     ],
+    "MedicationRequest": [
+      {
+        "url": "http://fhir.openmrs.org/fhir/StructureDefinition/omrs-medication-request",
+        "title": "OpenMRS Medication Request"
+      }
+    ],
     "Patient": [
       {
         "url": "http://fhir.openmrs.org/fhir/StructureDefinition/omrs-patient",
@@ -72,7 +78,8 @@
       "Patient.identifier"
     ],
     "http://fhir.openmrs.org/ext/address": [
-      "Patient.address"
+      "Patient.address",
+      "Person.address"
     ],
     "http://fhir.openmrs.org/fhir/StructureDefinition/omrs-patient-identifier-location": [
       "Identifier"
@@ -116,6 +123,10 @@
     ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status": [
       "StructureDefinition.snapshot.element"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name": [
+      "ImplementationGuide.definition.page",
+      "ImplementationGuide.definition.page.page"
     ],
     "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter": [
       "ImplementationGuide.definition"
