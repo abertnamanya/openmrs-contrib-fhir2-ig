@@ -10,7 +10,7 @@
   "name": "OMRSFhir2ImplementationGuide",
   "title": "OpenMRS FHIR2 Implementation Guide",
   "status": "draft",
-  "date": "2022-08-19T07:11:06+00:00",
+  "date": "2022-09-30T12:26:31+00:00",
   "contact": [
     {
       "name": "OpenMRS, Inc.",
@@ -30,10 +30,16 @@
   ],
   "dependsOn": [
     {
+      "id": "higtools",
+      "uri": "http://hl7.org/fhir/tools/ImplementationGuide/hl7.fhir.uv.tools",
+      "packageId": "hl7.fhir.uv.tools",
+      "version": "current"
+    },
+    {
       "id": "hl7tx",
       "uri": "http://terminology.hl7.org/ImplementationGuide/hl7.terminology",
       "packageId": "hl7.terminology.r4",
-      "version": "3.1.0"
+      "version": "4.0.0"
     }
   ],
   "definition": {
@@ -403,6 +409,20 @@
           }
         ],
         "reference": {
+          "reference": "StructureDefinition/omrs-medication-request"
+        },
+        "name": "OpenMRS Medication Request",
+        "description": "A FHIR MedicationRequest as understood by OpenMRS",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
           "reference": "StructureDefinition/omrs-patient"
         },
         "name": "OpenMRS Patient",
@@ -557,6 +577,34 @@
           }
         ],
         "reference": {
+          "reference": "ValueSet/medication-request-intent-vs"
+        },
+        "name": "Medication Request Intent Vs",
+        "description": "Medication Request Intent ValueSet",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/medication-request-priority-vs"
+        },
+        "name": "Medication Request Priority ValueSet",
+        "description": "Openmrs Medication Request Priority ValueSet",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
           "reference": "ValueSet/OpenMRS-task-intent-vs"
         },
         "name": "OpenMRS Intent for Task",
@@ -679,6 +727,20 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "MedicationRequest"
+          }
+        ],
+        "reference": {
+          "reference": "MedicationRequest/OMRSMedicationRequestExample"
+        },
+        "name": "OMRS Medication Request Example",
+        "description": "Example of the OMRS medication Request Resource",
+        "exampleCanonical": "http://fhir.openmrs.org/fhir/StructureDefinition/omrs-medication-request"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "Observation"
           }
         ],
@@ -707,6 +769,20 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ServiceRequest"
+          }
+        ],
+        "reference": {
+          "reference": "ServiceRequest/example-openmrs-ServiceRequest"
+        },
+        "name": "Openmrs serviceRequest",
+        "description": "Example OMRS Service Request Resource",
+        "exampleCanonical": "http://fhir.openmrs.org/fhir/StructureDefinition/OpenMRS-service-request"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "Task"
           }
         ],
@@ -716,19 +792,51 @@
         "name": "Openmrs Task",
         "description": "Example OMRS Task Resource",
         "exampleCanonical": "http://fhir.openmrs.org/fhir/StructureDefinition/OpenMRS-task"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Person"
+          }
+        ],
+        "reference": {
+          "reference": "Person/example-openmrs-person"
+        },
+        "name": "Openmrs Person",
+        "description": "Example OMRS Person Resource",
+        "exampleCanonical": "http://fhir.openmrs.org/fhir/StructureDefinition/omrs-person"
       }
     ],
     "page": {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl": "toc.html"
+        }
+      ],
       "nameUrl": "toc.html",
       "title": "Table of Contents",
       "generation": "html",
       "page": [
         {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+              "valueUrl": "index.html"
+            }
+          ],
           "nameUrl": "index.html",
           "title": "Home",
           "generation": "markdown"
         },
         {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+              "valueUrl": "changes.html"
+            }
+          ],
           "nameUrl": "changes.html",
           "title": "Changes",
           "generation": "markdown"
