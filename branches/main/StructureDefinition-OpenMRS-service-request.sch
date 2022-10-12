@@ -12,18 +12,30 @@
   <sch:pattern>
     <sch:title>f:ServiceRequest</sch:title>
     <sch:rule context="f:ServiceRequest">
+      <sch:assert test="count(f:instantiatesCanonical) &lt;= 0">instantiatesCanonical: maximum cardinality of 'instantiatesCanonical' is 0</sch:assert>
+      <sch:assert test="count(f:instantiatesUri) &lt;= 0">instantiatesUri: maximum cardinality of 'instantiatesUri' is 0</sch:assert>
+      <sch:assert test="count(f:requisition) &lt;= 0">requisition: maximum cardinality of 'requisition' is 0</sch:assert>
+      <sch:assert test="count(f:category) &lt;= 0">category: maximum cardinality of 'category' is 0</sch:assert>
+      <sch:assert test="count(f:priority) &lt;= 0">priority: maximum cardinality of 'priority' is 0</sch:assert>
+      <sch:assert test="count(f:doNotPerform) &lt;= 0">doNotPerform: maximum cardinality of 'doNotPerform' is 0</sch:assert>
       <sch:assert test="count(f:code) &gt;= 1">code: minimum cardinality of 'code' is 1</sch:assert>
-    </sch:rule>
-  </sch:pattern>
-  <sch:pattern>
-    <sch:title>ServiceRequest</sch:title>
-    <sch:rule context="f:ServiceRequest">
-      <sch:assert test="not(parent::f:contained and f:contained)">If the resource is contained in another resource, it SHALL NOT contain nested Resources (inherited)</sch:assert>
-      <sch:assert test="not(exists(for $id in f:contained/*/f:id/@value return $contained[not(parent::*/descendant::f:reference/@value=concat('#', $contained/*/id/@value) or descendant::f:reference[@value='#'])]))">If the resource is contained in another resource, it SHALL be referred to from elsewhere in the resource or SHALL refer to the containing resource (inherited)</sch:assert>
-      <sch:assert test="not(exists(f:contained/*/f:meta/f:versionId)) and not(exists(f:contained/*/f:meta/f:lastUpdated))">If a resource is contained in another resource, it SHALL NOT have a meta.versionId or a meta.lastUpdated (inherited)</sch:assert>
-      <sch:assert test="not(exists(f:contained/*/f:meta/f:security))">If a resource is contained in another resource, it SHALL NOT have a security label (inherited)</sch:assert>
-      <sch:assert test="exists(f:text/h:div)">A resource should have narrative for robust management (inherited)</sch:assert>
-      <sch:assert test="exists(f:code) or not(exists(f:orderDetail))">orderDetail SHALL only be present if code is present (inherited)</sch:assert>
+      <sch:assert test="count(f:orderDetail) &lt;= 0">orderDetail: maximum cardinality of 'orderDetail' is 0</sch:assert>
+      <sch:assert test="count(f:quantity[x]) &lt;= 0">quantity[x]: maximum cardinality of 'quantity[x]' is 0</sch:assert>
+      <sch:assert test="count(f:asNeeded[x]) &lt;= 0">asNeeded[x]: maximum cardinality of 'asNeeded[x]' is 0</sch:assert>
+      <sch:assert test="count(f:authoredOn) &lt;= 0">authoredOn: maximum cardinality of 'authoredOn' is 0</sch:assert>
+      <sch:assert test="count(f:requester) &gt;= 1">requester: minimum cardinality of 'requester' is 1</sch:assert>
+      <sch:assert test="count(f:performerType) &lt;= 0">performerType: maximum cardinality of 'performerType' is 0</sch:assert>
+      <sch:assert test="count(f:locationCode) &lt;= 0">locationCode: maximum cardinality of 'locationCode' is 0</sch:assert>
+      <sch:assert test="count(f:locationReference) &lt;= 0">locationReference: maximum cardinality of 'locationReference' is 0</sch:assert>
+      <sch:assert test="count(f:reasonCode) &lt;= 0">reasonCode: maximum cardinality of 'reasonCode' is 0</sch:assert>
+      <sch:assert test="count(f:reasonReference) &lt;= 0">reasonReference: maximum cardinality of 'reasonReference' is 0</sch:assert>
+      <sch:assert test="count(f:insurance) &lt;= 0">insurance: maximum cardinality of 'insurance' is 0</sch:assert>
+      <sch:assert test="count(f:supportingInfo) &lt;= 0">supportingInfo: maximum cardinality of 'supportingInfo' is 0</sch:assert>
+      <sch:assert test="count(f:specimen) &lt;= 0">specimen: maximum cardinality of 'specimen' is 0</sch:assert>
+      <sch:assert test="count(f:bodySite) &lt;= 0">bodySite: maximum cardinality of 'bodySite' is 0</sch:assert>
+      <sch:assert test="count(f:note) &lt;= 0">note: maximum cardinality of 'note' is 0</sch:assert>
+      <sch:assert test="count(f:patientInstruction) &lt;= 0">patientInstruction: maximum cardinality of 'patientInstruction' is 0</sch:assert>
+      <sch:assert test="count(f:relevantHistory) &lt;= 0">relevantHistory: maximum cardinality of 'relevantHistory' is 0</sch:assert>
     </sch:rule>
   </sch:pattern>
   <sch:pattern>
