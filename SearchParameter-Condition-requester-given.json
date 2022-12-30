@@ -1,33 +1,25 @@
 {
-  "resourceType": "SearchParameter",
-  "id": "Condition-requester-given",
-  "text": {
-    "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: SearchParameter</b><a name=\"Condition-requester-given\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource SearchParameter \"Condition-requester-given\" </p></div><p><b>url</b>: <code>http://fhir.openmrs.org/fhir/SearchParameter/Condition-requester-given</code></p><p><b>version</b>: 0.1.0</p><p><b>name</b>: conditionRequesterGivenSearchParameter</p><p><b>status</b>: active</p><p><b>date</b>: 2022-10-12 01:19:25+0000</p><p><b>contact</b>: OpenMRS, Inc.: <a href=\"https://openmrs.org\">https://openmrs.org</a></p><p><b>description</b>: Searches for condition based on the Practitioner's given name(s) eg) /ws/fhir2/{release}/Condition?requester:Practitioner.given={givenName}</p><p><b>code</b>: requester.given</p><p><b>base</b>: Condition</p><p><b>type</b>: string</p><p><b>target</b>: OMRSCondition</p></div>"
+  "resourceType" : "SearchParameter",
+  "id" : "Condition-requester-given",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: SearchParameter</b><a name=\"Condition-requester-given\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource SearchParameter &quot;Condition-requester-given&quot; </p></div><p><b>url</b>: <code>http://fhir.openmrs.org/fhir/SearchParameter/Condition-requester-given</code></p><p><b>version</b>: 0.1.0</p><p><b>name</b>: conditionRequesterGivenSearchParameter</p><p><b>status</b>: active</p><p><b>date</b>: 2022-12-30 12:43:23+0000</p><p><b>contact</b>: OpenMRS, Inc.: <a href=\"https://openmrs.org\">https://openmrs.org</a></p><p><b>description</b>: Searches for condition based on the Practitioner's given name(s) eg) /ws/fhir2/{release}/Condition?requester:Practitioner.given={givenName}</p><p><b>code</b>: requester.given</p><p><b>base</b>: Condition</p><p><b>type</b>: string</p><p><b>target</b>: OMRSCondition</p></div>"
   },
-  "url": "http://fhir.openmrs.org/fhir/SearchParameter/Condition-requester-given",
-  "version": "0.1.0",
-  "name": "conditionRequesterGivenSearchParameter",
-  "status": "active",
-  "date": "2022-10-12T01:19:25+00:00",
-  "contact": [
-    {
-      "name": "OpenMRS, Inc.",
-      "telecom": [
-        {
-          "system": "url",
-          "value": "https://openmrs.org"
-        }
-      ]
-    }
-  ],
-  "description": "Searches for condition based on the Practitioner's given name(s) eg) /ws/fhir2/{release}/Condition?requester:Practitioner.given={givenName}",
-  "code": "requester.given",
-  "base": [
-    "Condition"
-  ],
-  "type": "string",
-  "target": [
-    "OMRSCondition"
-  ]
+  "url" : "http://fhir.openmrs.org/fhir/SearchParameter/Condition-requester-given",
+  "version" : "0.1.0",
+  "name" : "conditionRequesterGivenSearchParameter",
+  "status" : "active",
+  "date" : "2022-12-30T12:43:23+00:00",
+  "contact" : [{
+    "name" : "OpenMRS, Inc.",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://openmrs.org"
+    }]
+  }],
+  "description" : "Searches for condition based on the Practitioner's given name(s) eg) /ws/fhir2/{release}/Condition?requester:Practitioner.given={givenName}",
+  "code" : "requester.given",
+  "base" : ["Condition"],
+  "type" : "string",
+  "target" : ["OMRSCondition"]
 }
