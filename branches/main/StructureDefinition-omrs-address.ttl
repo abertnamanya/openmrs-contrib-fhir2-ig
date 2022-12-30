@@ -7,17 +7,17 @@
 
 <http://fhir.openmrs.org/fhir/StructureDefinition/omrs-address> a fhir:StructureDefinition;
   fhir:nodeRole fhir:treeRoot;
-  fhir:Resource.id [ fhir:value "omrs-address"];
+  fhir:Resource.id [ fhir:value "omrs-address"]; # 
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "extensions" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;\"><tr style=\"border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top\"><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"The logical name of the element\">Name</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Information about the use of the element\">Flags</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Minimum and Maximum # of times the the element can appear in the instance\">Card.</a></th><th style=\"width: 100px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Reference to the type of the element\">Type</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Additional information about the element\">Description &amp; Constraints</a><span style=\"float: right\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Legend for this format\"><img src=\"http://hl7.org/fhir/R4/help16.png\" alt=\"doco\" style=\"background-color: inherit\"/></a></span></th></tr><tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck0.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-omrs-address-definitions.html#Address\">Address</a><a name=\"Address\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#Address\">Address</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">An address expressed using postal conventions (as opposed to GPS or other location definition formats)</span></td></tr>\r\n<tr><td colspan=\"5\" class=\"hierarchy\"><br/><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Legend for this format\"><img src=\"http://hl7.org/fhir/R4/help16.png\" alt=\"doco\" style=\"background-color: inherit\"/> Documentation for this format</a></td></tr></table></div>"
-  ];
-  fhir:StructureDefinition.url [ fhir:value "http://fhir.openmrs.org/fhir/StructureDefinition/omrs-address"];
-  fhir:StructureDefinition.version [ fhir:value "0.1.0"];
-  fhir:StructureDefinition.name [ fhir:value "OMRSAddress"];
-  fhir:StructureDefinition.title [ fhir:value "OMRS Address"];
-  fhir:StructureDefinition.status [ fhir:value "active"];
-  fhir:StructureDefinition.date [ fhir:value "2022-10-12T01:19:25+00:00"^^xsd:dateTime];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;\"><tr style=\"border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top\"><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"The logical name of the element\">Name</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Information about the use of the element\">Flags</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Minimum and Maximum # of times the the element can appear in the instance\">Card.</a></th><th style=\"width: 100px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Reference to the type of the element\">Type</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Additional information about the element\">Description &amp; Constraints</a><span style=\"float: right\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Legend for this format\"><img src=\"http://hl7.org/fhir/R4/help16.png\" alt=\"doco\" style=\"background-color: inherit\"/></a></span></th></tr><tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck0.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-omrs-address-definitions.html#Address\">Address</a><a name=\"Address\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#Address\">Address</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">An address expressed using postal conventions (as opposed to GPS or other location definition formats)</span></td></tr>\r\n<tr><td colspan=\"5\" class=\"hierarchy\"><br/><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Legend for this format\"><img src=\"http://hl7.org/fhir/R4/help16.png\" alt=\"doco\" style=\"background-color: inherit\"/> Documentation for this format</a></td></tr></table></div>"
+  ]; # 
+  fhir:StructureDefinition.url [ fhir:value "http://fhir.openmrs.org/fhir/StructureDefinition/omrs-address"]; # 
+  fhir:StructureDefinition.version [ fhir:value "0.1.0"]; # 
+  fhir:StructureDefinition.name [ fhir:value "OMRSAddress"]; # 
+  fhir:StructureDefinition.title [ fhir:value "OMRS Address"]; # 
+  fhir:StructureDefinition.status [ fhir:value "active"]; # 
+  fhir:StructureDefinition.date [ fhir:value "2022-12-30T12:43:23+00:00"^^xsd:dateTime]; # 
   fhir:StructureDefinition.contact [
      fhir:index 0;
      fhir:ContactDetail.name [ fhir:value "OpenMRS, Inc." ];
@@ -26,9 +26,9 @@
        fhir:ContactPoint.system [ fhir:value "url" ];
        fhir:ContactPoint.value [ fhir:value "https://openmrs.org" ]
      ]
-  ];
-  fhir:StructureDefinition.description [ fhir:value "Address profile specifies the geological location details"];
-  fhir:StructureDefinition.fhirVersion [ fhir:value "4.0.1"];
+  ]; # 
+  fhir:StructureDefinition.description [ fhir:value "Address profile specifies the geological location details"]; # 
+  fhir:StructureDefinition.fhirVersion [ fhir:value "4.0.1"]; # 
   fhir:StructureDefinition.mapping [
      fhir:index 0;
      fhir:StructureDefinition.mapping.identity [ fhir:value "v2" ];
@@ -49,15 +49,15 @@
      fhir:StructureDefinition.mapping.identity [ fhir:value "vcard" ];
      fhir:StructureDefinition.mapping.uri [ fhir:value "http://w3.org/vcard" ];
      fhir:StructureDefinition.mapping.name [ fhir:value "vCard Mapping" ]
-  ];
-  fhir:StructureDefinition.kind [ fhir:value "complex-type"];
-  fhir:StructureDefinition.abstract [ fhir:value "false"^^xsd:boolean];
-  fhir:StructureDefinition.type [ fhir:value "Address"];
+  ]; # 
+  fhir:StructureDefinition.kind [ fhir:value "complex-type"]; # 
+  fhir:StructureDefinition.abstract [ fhir:value "false"^^xsd:boolean]; # 
+  fhir:StructureDefinition.type [ fhir:value "Address"]; # 
   fhir:StructureDefinition.baseDefinition [
      fhir:value "http://hl7.org/fhir/StructureDefinition/Address";
      fhir:link <http://hl7.org/fhir/StructureDefinition/Address>
-  ];
-  fhir:StructureDefinition.derivation [ fhir:value "constraint"];
+  ]; # 
+  fhir:StructureDefinition.derivation [ fhir:value "constraint"]; # 
   fhir:StructureDefinition.snapshot [
      fhir:StructureDefinition.snapshot.element [
        fhir:index 0;
@@ -83,7 +83,6 @@
          fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
          fhir:ElementDefinition.constraint.human [ fhir:value "All FHIR elements must have a @value or children" ];
          fhir:ElementDefinition.constraint.expression [ fhir:value "hasValue() or (children().count() > id.count())" ];
-         fhir:ElementDefinition.constraint.xpath [ fhir:value "@value|f:*|h:div" ];
          fhir:ElementDefinition.constraint.source [
            fhir:value "http://hl7.org/fhir/StructureDefinition/Element";
            fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
@@ -180,7 +179,6 @@
          fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
          fhir:ElementDefinition.constraint.human [ fhir:value "All FHIR elements must have a @value or children" ];
          fhir:ElementDefinition.constraint.expression [ fhir:value "hasValue() or (children().count() > id.count())" ];
-         fhir:ElementDefinition.constraint.xpath [ fhir:value "@value|f:*|h:div" ];
          fhir:ElementDefinition.constraint.source [
            fhir:value "http://hl7.org/fhir/StructureDefinition/Element";
            fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
@@ -191,7 +189,6 @@
          fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
          fhir:ElementDefinition.constraint.human [ fhir:value "Must have either extensions or value[x], not both" ];
          fhir:ElementDefinition.constraint.expression [ fhir:value "extension.exists() != value.exists()" ];
-         fhir:ElementDefinition.constraint.xpath [ fhir:value "exists(f:extension)!=exists(f:*[starts-with(local-name(.), \"value\")])" ];
          fhir:ElementDefinition.constraint.source [
            fhir:value "http://hl7.org/fhir/StructureDefinition/Extension";
            fhir:link <http://hl7.org/fhir/StructureDefinition/Extension>
@@ -234,7 +231,6 @@
          fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
          fhir:ElementDefinition.constraint.human [ fhir:value "All FHIR elements must have a @value or children" ];
          fhir:ElementDefinition.constraint.expression [ fhir:value "hasValue() or (children().count() > id.count())" ];
-         fhir:ElementDefinition.constraint.xpath [ fhir:value "@value|f:*|h:div" ];
          fhir:ElementDefinition.constraint.source [
            fhir:value "http://hl7.org/fhir/StructureDefinition/Element";
            fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
@@ -298,7 +294,6 @@
          fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
          fhir:ElementDefinition.constraint.human [ fhir:value "All FHIR elements must have a @value or children" ];
          fhir:ElementDefinition.constraint.expression [ fhir:value "hasValue() or (children().count() > id.count())" ];
-         fhir:ElementDefinition.constraint.xpath [ fhir:value "@value|f:*|h:div" ];
          fhir:ElementDefinition.constraint.source [
            fhir:value "http://hl7.org/fhir/StructureDefinition/Element";
            fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
@@ -362,7 +357,6 @@
          fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
          fhir:ElementDefinition.constraint.human [ fhir:value "All FHIR elements must have a @value or children" ];
          fhir:ElementDefinition.constraint.expression [ fhir:value "hasValue() or (children().count() > id.count())" ];
-         fhir:ElementDefinition.constraint.xpath [ fhir:value "@value|f:*|h:div" ];
          fhir:ElementDefinition.constraint.source [
            fhir:value "http://hl7.org/fhir/StructureDefinition/Element";
            fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
@@ -412,7 +406,6 @@
          fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
          fhir:ElementDefinition.constraint.human [ fhir:value "All FHIR elements must have a @value or children" ];
          fhir:ElementDefinition.constraint.expression [ fhir:value "hasValue() or (children().count() > id.count())" ];
-         fhir:ElementDefinition.constraint.xpath [ fhir:value "@value|f:*|h:div" ];
          fhir:ElementDefinition.constraint.source [
            fhir:value "http://hl7.org/fhir/StructureDefinition/Element";
            fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
@@ -469,7 +462,6 @@
          fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
          fhir:ElementDefinition.constraint.human [ fhir:value "All FHIR elements must have a @value or children" ];
          fhir:ElementDefinition.constraint.expression [ fhir:value "hasValue() or (children().count() > id.count())" ];
-         fhir:ElementDefinition.constraint.xpath [ fhir:value "@value|f:*|h:div" ];
          fhir:ElementDefinition.constraint.source [
            fhir:value "http://hl7.org/fhir/StructureDefinition/Element";
            fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
@@ -527,7 +519,6 @@
          fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
          fhir:ElementDefinition.constraint.human [ fhir:value "All FHIR elements must have a @value or children" ];
          fhir:ElementDefinition.constraint.expression [ fhir:value "hasValue() or (children().count() > id.count())" ];
-         fhir:ElementDefinition.constraint.xpath [ fhir:value "@value|f:*|h:div" ];
          fhir:ElementDefinition.constraint.source [
            fhir:value "http://hl7.org/fhir/StructureDefinition/Element";
            fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
@@ -574,7 +565,6 @@
          fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
          fhir:ElementDefinition.constraint.human [ fhir:value "All FHIR elements must have a @value or children" ];
          fhir:ElementDefinition.constraint.expression [ fhir:value "hasValue() or (children().count() > id.count())" ];
-         fhir:ElementDefinition.constraint.xpath [ fhir:value "@value|f:*|h:div" ];
          fhir:ElementDefinition.constraint.source [
            fhir:value "http://hl7.org/fhir/StructureDefinition/Element";
            fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
@@ -631,7 +621,6 @@
          fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
          fhir:ElementDefinition.constraint.human [ fhir:value "All FHIR elements must have a @value or children" ];
          fhir:ElementDefinition.constraint.expression [ fhir:value "hasValue() or (children().count() > id.count())" ];
-         fhir:ElementDefinition.constraint.xpath [ fhir:value "@value|f:*|h:div" ];
          fhir:ElementDefinition.constraint.source [
            fhir:value "http://hl7.org/fhir/StructureDefinition/Element";
            fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
@@ -680,7 +669,6 @@
          fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
          fhir:ElementDefinition.constraint.human [ fhir:value "All FHIR elements must have a @value or children" ];
          fhir:ElementDefinition.constraint.expression [ fhir:value "hasValue() or (children().count() > id.count())" ];
-         fhir:ElementDefinition.constraint.xpath [ fhir:value "@value|f:*|h:div" ];
          fhir:ElementDefinition.constraint.source [
            fhir:value "http://hl7.org/fhir/StructureDefinition/Element";
            fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
@@ -737,7 +725,6 @@
          fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
          fhir:ElementDefinition.constraint.human [ fhir:value "All FHIR elements must have a @value or children" ];
          fhir:ElementDefinition.constraint.expression [ fhir:value "hasValue() or (children().count() > id.count())" ];
-         fhir:ElementDefinition.constraint.xpath [ fhir:value "@value|f:*|h:div" ];
          fhir:ElementDefinition.constraint.source [
            fhir:value "http://hl7.org/fhir/StructureDefinition/Element";
            fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
@@ -759,14 +746,14 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "./StartDate and ./EndDate" ]
        ]
      ]
-  ];
+  ]; # 
   fhir:StructureDefinition.differential [
      fhir:StructureDefinition.differential.element [
        fhir:index 0;
        fhir:Element.id [ fhir:value "Address" ];
        fhir:ElementDefinition.path [ fhir:value "Address" ]
      ]
-  ] .
+  ] . # 
 
 # - ontology header ------------------------------------------------------------
 
