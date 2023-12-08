@@ -5,12 +5,13 @@
   <text>
     <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include all codes defined in <a href="http://loinc.org"><code>http://loinc.org</code></a></li></ul></div>
   </text>
-  <url value="http://fhir.openmrs.org/fhir/ValueSet/OpenMRS-order-code-vs"/>
+  <url value="http://fhir.openmrs.org/core/ValueSet/OpenMRS-order-code-vs"/>
   <version value="0.1.0"/>
   <name value="OpenMRSOrderCodeVS"/>
   <title value="OpenMRS Order Code"/>
   <status value="active"/>
-  <date value="2023-03-16T12:56:05+00:00"/>
+  <experimental value="true"/>
+  <date value="2023-12-08T16:41:46+00:00"/>
   <contact>
     <name value="OpenMRS, Inc."/>
     <telecom>

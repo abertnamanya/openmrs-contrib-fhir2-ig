@@ -7,7 +7,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>OPENMRS\OpenMRS condition - Mappings - FHIR v4.0.1</title>
+    <title>OpenMRS condition - Mappings - OpenMRS Core FHIR Implementation Guide v0.1.0</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -38,25 +38,25 @@
     <![endif]-->
 
     <!-- Favicons -->
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png"/>
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png"/>
-    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png"/>
-    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png"/>
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
     <link rel="shortcut icon" href="assets/ico/favicon.png"/>
   </head>
   <body onload="document.body.style.opacity='1'">
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"3.169"}
-    h3,h4,h5,h6{--heading-prefix:"3.169"}</style>
+    <style type="text/css">h2{--heading-prefix:"3.173"}
+    h3,h4,h5,h6{--heading-prefix:"3.173"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
         <!-- Placeholder for child template header declarations -->
 
 <!-- Left logo - typically the publisher's logo - project or affiliate -->
         <div id="project-nav">
-          <a id="project-logo" no-external="true" href="http://hl7.eu">
+          <a id="project-logo" no-external="true" href="https://ohie.org/">
             <img height="71" alt="Project home" src="assets/images/home.png"/>
           </a>
         </div>
@@ -76,7 +76,7 @@
 
 
         <div id="ig-status">
-          <p><span style="font-size:12pt;font-weight:bold">OpenMRS FHIR2 Implementation Guide</span>
+          <p><span style="font-size:12pt;font-weight:bold">OpenMRS Core FHIR Implementation Guide</span>
             <br/>
             <span style="display:inline-block;">0.1.0 - ci-build
 
@@ -156,7 +156,7 @@
           <div class="inner-wrapper">
 
 <div style="counter-reset: section 5" class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">OpenMRS FHIR2 Implementation Guide - Local Development build (v0.1.0). See the <a href="http://fhir.openmrs.org/fhir/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">OpenMRS Core FHIR Implementation Guide - Local Development build (v0.1.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href="http://fhir.openmrs.org/core/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
   
 
 
@@ -231,6 +231,7 @@
 
 <a name="root"> </a>
 <h2 id="root">Resource Profile: OMRSCondition - Mappings</h2>
+
   <table class="colsi">
     <tr>
 
@@ -238,7 +239,7 @@
         
           Active
           
-            as of 2023-03-16
+            as of 2023-12-08
           
         
       </td>
@@ -322,15 +323,16 @@ OR &lt; 272379006 |Event|</td> </tr>
  <tr><td>Condition</td><td></td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;code</td><td>246090004</td> </tr>
 </table>
-<a name="condition-mapping"> </a><h3>Mappings for FHIR HL7 vs OMRS FHIR2 (http://hl7.org/fhir/3.0/StructureDefinition/Condition)</h3><p>Condition is an FHIR resource used to record detailed information about the condition, problem, diagnosis, or other events, situation, issue, or clinical concept that has risen to the level of concern. FHIR conditions are mapped to OpenMrs Condition Objects.</p><table class="grid">
+<a name="condition-mapping"> </a><h3>Mappings for FHIR HL7 vs OMRS FHIR2 (Condition)</h3><p>Condition is an FHIR resource used to record detailed information about the condition, problem, diagnosis, or other events, situation, issue, or clinical concept that has risen to the level of concern. FHIR conditions are mapped to OpenMrs Condition Objects.</p><table class="grid">
  <tr><td colspan="3"><b>OMRSCondition</b></td></tr>
- <tr><td>Condition</td><td>OMRS Condition</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;id</td><td>condition.uuid</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;code</td><td>condition.code</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;subject</td><td>condition.patient</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;onset[x] (onsetDateTime)</td><td>condition.onsetDate</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;recordedDate</td><td>condition.dateCreated</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;recorder</td><td>condition.creator</td> </tr>
+ <tr><td>Condition</td><td>OMRS Condition</td><td><p>This profile maps to Condition in OMRS FHIR2</p>
+</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;id</td><td>condition.uuid</td><td></td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;code</td><td>condition.code</td><td></td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;subject</td><td>condition.patient</td><td></td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;onset[x] (onsetDateTime)</td><td>condition.onsetDate</td><td></td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;recordedDate</td><td>condition.dateCreated</td><td></td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;recorder</td><td>condition.creator</td><td></td> </tr>
 </table>
 
 
@@ -386,13 +388,13 @@ OR &lt; 272379006 |Event|</td> </tr>
            
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2021+ <a style="color: #81BEF7" href="https://openmrs.org"></a>.  Package openmrs#0.1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Mar 16, 2023 12:56+0000">2023-03-16</span>
+          IG &#169; 2021+ <a style="color: #81BEF7" href="https://openmrs.org"></a>.  Package openmrs.fhir.core#0.1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Dec 8, 2023 16:41+0000">2023-12-08</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |
                  <a style="color: #81BEF7" href="qa.html">QA Report</a> |
                  
-                 <a style="color: #81BEF7" target="_blank" href="http://fhir.openmrs.org/fhir/history.html">Version History</a> |
+                 <a style="color: #81BEF7" target="_blank" href="http://fhir.openmrs.org/core/history.html">Version History</a> |
                  <a style="color: #81BEF7" rel="license" href="http://hl7.org/fhir/R4/license.html"><img style="border-style: none;" alt="CC-BY" src="assets/images/cc-by.png" height="17"/></a> |
                  <!--<a style="color: #81BEF7" href="todo.html">Search</a> | --> 
 
