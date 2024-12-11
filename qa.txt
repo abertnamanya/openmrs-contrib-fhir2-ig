@@ -3,7 +3,7 @@ OMRSFhir2ImplementationGuide : Validation Results
 
 err = 5, warn = 26, info = 2
 IG Publisher Version: 1.8.1
-Generated Wed Dec 11 17:15:07 UTC 2024. FHIR version 4.0.1 for openmrs.fhir.core#0.1.0 (canonical = http://fhir.openmrs.org/core)
+Generated Wed Dec 11 17:19:49 UTC 2024. FHIR version 4.0.1 for openmrs.fhir.core#0.1.0 (canonical = http://fhir.openmrs.org/core)
  Build Errors : 6 / 5 / 0
  /github/workspace/fsh-generated/resources/AllergyIntolerance-5b829d01-34bb-47d1-b1bb-9303c3a9ebc : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/CodeSystem-encounter-type : 0 / 0 / 1
