@@ -109,6 +109,12 @@
         "title": "Openmrs Practitioner"
       }
     ],
+    "RelatedPerson": [
+      {
+        "url": "http://fhir.openmrs.org/core/StructureDefinition/omrs-related-person",
+        "title": "OpenMRS Related Person"
+      }
+    ],
     "MedicationDispense": [
       {
         "url": "http://fhir.openmrs.org/core/StructureDefinition/omrsmedication-dispense",
