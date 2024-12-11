@@ -10,8 +10,8 @@
       "systems" : ["http://loinc.org"],
       "uses" : {
       },
-      "StructureDefinition-OpenMRS-service-request.html" : "OpenMRS Service Request",
-      "StructureDefinition-OpenMRS-diagnostic-report.html" : "OpenMRS Diagnostic Report"
+      "StructureDefinition-OpenMRS-diagnostic-report.html" : "OpenMRS Diagnostic Report",
+      "StructureDefinition-OpenMRS-service-request.html" : "OpenMRS Service Request"
     }
   ]
 }
